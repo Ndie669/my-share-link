@@ -6,16 +6,14 @@
 
   <title>Check this out</title>
 
-  <!-- Messenger / Facebook preview -->
+  <!-- Messenger/Facebook Preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Check this out 👀">
   <meta property="og:description" content="Click to view">
   <meta property="og:url" content="https://ndie669.github.io/my-share-link/">
 
-  <!-- Preview image -->
+  <!-- Preview Image -->
   <meta property="og:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
-  <meta property="og:image:secure_url" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
-  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -23,35 +21,31 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
 
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
-  <p>Loading...</p>
-
-  <!-- Visible image for crawlers -->
-  <img
-    src="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg"
-    alt="Preview"
-    width="500"
-    style="display:none;"
-  >
-
-  <script>
-    // Detect Messenger/Facebook crawler
-    const ua = navigator.userAgent.toLowerCase();
-
-    const isBot =
-      ua.includes("facebookexternalhit") ||
-      ua.includes("facebot") ||
-      ua.includes("facebookcatalog");
-
-    // Redirect ONLY real users
-    if (!isBot) {
-      setTimeout(() => {
-        window.location.href =
-          "https://www.facebook.com/reel/900485386339617";
-      }, 500);
-    }
-  </script>
+  <a href="https://www.facebook.com/reel/900485386339617">
+    <img src="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg" alt="image">
+  </a>
 </body>
 </html>
