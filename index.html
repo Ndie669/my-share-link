@@ -2,39 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Check this out</title>
 
-  <!-- Facebook / Messenger -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Check this out">
   <meta property="og:description" content="Click to view">
   <meta property="og:url" content="https://ndie669.github.io/my-share-link/">
   <meta property="og:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
 
-  <!-- Important extras -->
-  <meta property="og:image:alt" content="Preview image">
-  <meta name="robots" content="index, follow">
-
-  <!-- Delay redirect -->
-  <meta http-equiv="refresh" content="10; url=https://www.facebook.com/reel/900485386339617">
 </head>
-
 <body>
-  <p>Loading...</p>
-
-  <!-- Visible image helps crawlers -->
-  <img
-    src="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg"
-    width="600"
-    alt="preview"
-  >
-
   <script>
+    // redirect only for real visitors
     setTimeout(() => {
       window.location.href =
         "https://www.facebook.com/reel/900485386339617";
-    }, 10000);
+    }, 15000); // 15 sec for testing
   </script>
+
+  <h2>Loading...</h2>
+
+  <img
+    src="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg"
+    width="600"
+  >
 </body>
 </html>
