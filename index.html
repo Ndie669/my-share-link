@@ -6,13 +6,13 @@
 
   <title>Check this out</title>
 
-  <!-- Messenger Preview -->
+  <!-- Messenger / Facebook preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Check this out 👀">
   <meta property="og:description" content="Click to view">
   <meta property="og:url" content="https://ndie669.github.io/my-share-link/">
 
-  <!-- IMPORTANT: image -->
+  <!-- Preview image -->
   <meta property="og:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
   <meta property="og:image:secure_url" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -23,29 +23,35 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
 
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-  </style>
 </head>
 
 <body>
-  <div>Loading...</div>
+  <p>Loading...</p>
+
+  <!-- Visible image for crawlers -->
+  <img
+    src="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg"
+    alt="Preview"
+    width="500"
+    style="display:none;"
+  >
 
   <script>
-    // Delay redirect longer so Messenger loads preview
-    setTimeout(() => {
-      window.location.href =
-        "https://www.facebook.com/reel/900485386339617";
-    }, 5000);
+    // Detect Messenger/Facebook crawler
+    const ua = navigator.userAgent.toLowerCase();
+
+    const isBot =
+      ua.includes("facebookexternalhit") ||
+      ua.includes("facebot") ||
+      ua.includes("facebookcatalog");
+
+    // Redirect ONLY real users
+    if (!isBot) {
+      setTimeout(() => {
+        window.location.href =
+          "https://www.facebook.com/reel/900485386339617";
+      }, 500);
+    }
   </script>
 </body>
 </html>
