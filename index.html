@@ -3,15 +3,27 @@
 <head>
   <title>Check this out</title>
 
+  <!-- Open Graph (Messenger/Facebook preview) -->
   <meta property="og:title" content="Check this out">
   <meta property="og:description" content="Click to view">
-  <meta property="og:image" content="aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
+  <meta property="og:image" content="https://ndie669.github.io/my-share-link/aifaceswap-3094dcdad7f9ac46bb6201da981c8db8.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
 
-  <meta http-equiv="refresh" content="0; url=https://www.facebook.com/reel/900485386339617">
+  <!-- Prevent instant redirect so crawler can read OG tags -->
+  <meta http-equiv="refresh" content="5; url=https://www.facebook.com/reel/900485386339617">
+
+  <script>
+    // JS fallback redirect (slightly delayed so preview can load)
+    setTimeout(function () {
+      window.location.href = "https://www.facebook.com/reel/900485386339617";
+    }, 5000);
+  </script>
+
 </head>
 
 <body>
-  Redirecting...
+  Redirecting... Please wait.
 </body>
 </html>
